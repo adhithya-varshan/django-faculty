@@ -1,0 +1,12 @@
+{% extends "posts/post_base.html" %}
+
+{% load bootstrap3 %}
+
+{% block post_content %}
+<h4>publish your detail</h4>
+<form method="POST" action="{% url 'posts:create' %}" id="postForm">
+	{% csrf_token %}
+	{% bootstrap_form form %}
+	<input type="submit" value="Add Detail" class="btn btn-primary btn-large">
+</form>
+{% endblock %}
