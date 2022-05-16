@@ -1,0 +1,46 @@
+.parent {
+  background-color: #252E3B;
+  height: 400px;
+  display: flex;
+}
+h1 {
+  margin: 0px;
+  font-family: monospace;
+}
+.box-one {
+  width: 35%;
+  color: white;
+  background-color: #252E3B;
+  padding: 50px;
+}
+.box-two {
+  width: 80%;
+  background: linear-gradient(-57deg, #F0DA50 63%, #252E3B 42%);
+  color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #F0DA50;
+}
+.image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-left: 27%;
+}
+.color-secondary, a {
+  color: #F0DA50;
+  text-decoration: none;
+}
+.contact-link {
+  padding: 10px 30px;
+  background: #F7DF1E;
+  border-radius: 5px;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}

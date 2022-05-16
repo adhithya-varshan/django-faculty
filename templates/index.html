@@ -1,9 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h1>Welcome to FDS!</h1>
-    <p>Can view faculty details in here</h2>
-    <p>Login or Sign-up to get started!</h2>
+    {% if user.is_authenticated %}
+       
+        <h1>Welcome to presenza</h1>
+        <p>post your feedback/queries</h2>
+       <div class="parent">
+  <div class="box-one">
+    <h1>
+      <span class="color-secondary">{{ user.username }} 
+      </span>
+      <br />
+       <span class="color-secondary">{{ user.email }}</span>, at 
+      <a class="color-secondary" target="_blank" href="http://jsdevs.dev">{{ user.last_name }} </a> 
+    </h1>
+    <div style="margin-top:50px;">
+    <a class="contact-link" target="_blank" href="">{{ user.first_name }} </a> </div>
+  </div>
+  <div class="box-two">
+    <div class="image" >
+    
+    </div>
+  </div>
+</div>
+
+    {% endif %}
+    {% if not user.is_authenticated %}
+        <h1>Welcome to presenza</h1>
+        <p>Login or Sign-Up to get started!</h2>
+
+    {% endif %}
+    
 
 
 {% endblock %}

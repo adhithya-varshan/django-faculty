@@ -3,7 +3,7 @@
 {% load bootstrap3 %}
 
 {% block post_content %}
-<h4>publish your detail</h4>
+<h4>give your queries</h4>
 <form method="POST" action="{% url 'posts:create' %}" id="postForm">
 	{% csrf_token %}
 	{% bootstrap_form form %}
